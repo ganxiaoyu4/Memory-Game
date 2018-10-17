@@ -1,0 +1,116 @@
+html,body{
+    margin: 0;
+    background: url('../images/index-bg.png') repeat center;
+    /* font-family: 'Coda'; */
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+h1{
+    /* font-family: 'Open Sans',sans-serif; */
+    font-weight: 300;
+}
+
+.content section{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.content section .stars{
+    display: flex;
+    margin-right: 10px;
+}
+section .moves,section .timer{
+    margin:0 5px;
+}
+
+.deck{
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 30px;
+    border-radius:10px;
+    box-shadow: 12px 15px 20px 0 rgba(109, 114, 121, 0.5);
+    display: flex;
+    align-items: center;
+    /* 可以折行 */
+    flex-wrap: wrap; 
+    /*  */
+    justify-content: space-around;
+    margin-bottom: 30px;    
+}
+.deck .card{
+    width: 125px;
+    height: 125px;
+    background: #2e3d49;
+    color:#fff;
+    border-radius: 8px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 0;
+    box-shadow: 5px 2px 20px 0 rgba(46,61,73,0.5)
+}
+/* 点击盒子打开 */
+.deck .card.open{
+    transform: rotateY(0);
+    background: #02b3e4;
+    /* cursor: default; */
+}
+.deck .card.show{
+    font-size: 33px;
+}
+
+/* 盒子匹配成功 */
+.deck .card.match{
+    background: #02ccba;
+    font-size: 33px;
+}
+
+/* 盒子匹配失败 */
+.deck .card.wrong{
+    background: #ec4c3e;
+    font-size: 33px;
+}
+
+.c-box{
+    display: flex;
+    background: url('../images/model-bg.png') no-repeat center center;
+    width: 464px;
+    height: 584px;
+    position: fixed;
+    z-index: 199;
+}
+.c-box ul{
+    position: absolute;
+    left:74px;
+    top: 356px;
+}
+.c-box ul li{
+    line-height: 36px;
+}
+.c-box .fa-close{
+    font-size:30px;
+    right:-20px;
+    color:#ec4c3e;
+    position: absolute;
+
+}  
+
+
+

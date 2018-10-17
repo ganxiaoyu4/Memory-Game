@@ -1,0 +1,40 @@
+﻿字体图标链接
+
+
+
+<link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+
+字体图标网站
+
+
+
+https://fontawesome.com/v4.7.0/icons/
+
+
+css 
+
+常规样式
+
+主方块颜色
+
+
+background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+
+
+box-shadow: 12px 15px 20px 0 rgba(109, 114, 121, 0.5);
+
+
+
+
+animated
+
+bounce
+
+wobble
+
+bounceIn
+
+bounceOut
+
