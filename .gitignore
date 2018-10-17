@@ -1,0 +1,14 @@
+node_modules/
+*/node_modules/
+
+
+.idea
+
+.DS_Store
+
+
+.vscode 
+
+package-lock.json
+
+qg/
